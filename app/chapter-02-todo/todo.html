@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html data-ng-app>
+<html ng-app="todoApp">
 <head>
 	<title>TO DO List</title>
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript">
+    	var todoApp = angular.module("todoApp", []);
+    </script>
 </head>
 <body>
 	<div class="page-header">
