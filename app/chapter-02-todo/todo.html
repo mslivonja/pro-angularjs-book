@@ -6,12 +6,20 @@
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
     <script src="/bower_components/angular/angular.min.js"></script>
     <script type="text/javascript">
+    	var model = {
+    		user: "Adam",
+    		items: [{ action: "Buy Flowers", done: false },
+    		{ action: "Get Shoes", done: false },
+    		{ action: "Collect Tickets", done: true },
+    		{ action: "Call Joe", done: false }]
+    	};
+
     	var todoApp = angular.module("todoApp", []);
     </script>
 </head>
 <body>
 	<div class="page-header">
-		<h1>Adam's To Do List</h1>
+		<h1>To Do List</h1>
 	</div>
 	<div class="panel">
 		<div class="input-group">
@@ -28,10 +36,6 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr><td>Buy Flowers</td><td>No</td></tr>
-				<tr><td>Get Shoes</td><td>No</td></tr>
-				<tr><td>Collect Tickets</td><td>Yes</td></tr>
-				<tr><td>Call Joe</td><td>No</td></tr>
 			</tbody>
 		</table>
 	</div>
